@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <section class="main">
+    <div class="information">
+      <div class="bill">
+        <p>Bill</p>
+        <input id="valorTotal" value="" type="text" autofocus>
+      </div>
+      <div class="tip">
+        <p>Select Tip %</p>
+        <div class="tip-button">
+          <button id="tip5">5%</button>
+          <button id="tip10">10%</button>
+          <button id="tip15">15%</button>
+          <button id="tip25">25%</button>
+          <button id="tip50">50%</button>
+          <input type="text" id="tip-custom" placeholder="Custom">
+        </div> 
+      </div>
+      <div class="number-of-people">
+        <p>Number Of People</p>
+        <input id="numeroPessoas" value="" type="text">
+      </div>
+    </div>
+    <div class="result">
+      <div class="tip-amount">
+        <p>Tip Amount
+          <br>/ person
+        </p>
+        <p></p>
+        <p class="price-amount">
+          R$ 0.00
+        </p>
+      </div>
+      <div class="total">
+        <p>Total
+          <br>/ person
+        </p>
+        <p class="price-total">
+          R$ 0.00
+        </p>
+      </div>
+      <button class="reset" type="reset">Reset</button>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
