@@ -134,5 +134,9 @@ input{
   margin-left: 20px;
 }
 
-
+.error{
+  font-size: 10px;
+  margin: 0;
+  color: red;
+}
 
