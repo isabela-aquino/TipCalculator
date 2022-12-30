@@ -140,3 +140,7 @@ input{
   color: red;
 }
 
+.tip-button button.active{
+  background: hsl(183, 62%, 36%);
+  color: var(--Very-dark-cyan);
+}

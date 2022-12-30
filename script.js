@@ -5,6 +5,7 @@ const button = document.querySelectorAll('.btn');
 const error = document.querySelector('.error');
 const tip_amount = document.querySelector('.price-amount')
 const price_total = document.querySelector('.price-total')
+const reset = document.getElementById('reset')
 
 let billValue = 0;
 let tipValue = 0.15;
@@ -22,6 +23,7 @@ function validateValueBill(){
 
 numberPeople.addEventListener('input', peopleValue)
 tip_custom.addEventListener('input', tipCustomValue)
+reset.addEventListener('click', resetButton)
 
 button.forEach(btn => {
   btn.addEventListener('click',handleClick)
@@ -62,7 +64,16 @@ function tipCustomValue(){
 function calcule(){
   let value_tip = (billValue * tipValue) / people;
   let totalAmount = billValue * (tipValue + 1) / people
-
   tip_amount.innerHTML = 'R$ ' +  value_tip.toFixed(2)
   price_total.innerHTML = 'R$ ' +  totalAmount.toFixed(2)
+}
+
+function resetButton(){
+  valueTotal.value = 0.0;
+  validateValueBill()
+  button.forEach(btn =>{
+    btn.classList.remove('active')
+  })
+  people = 1;
+  numberPeople.value = ''
 }
