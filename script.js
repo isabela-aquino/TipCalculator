@@ -76,4 +76,5 @@ function resetButton(){
   })
   people = 1;
   numberPeople.value = ''
+  tip_custom.value = ''
 }
