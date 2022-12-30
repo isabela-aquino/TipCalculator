@@ -10,9 +10,9 @@ let billValue = 0;
 let tipValue = 0.15;
 let people = 1;
 
-valueTotal.addEventListener('input', validateValue);
+valueTotal.addEventListener('input', validateValueBill);
 
-function validateValue(){
+function validateValueBill(){
   if(valueTotal.value.includes(',')){
     valueTotal.value.replace(',','.')
   }
